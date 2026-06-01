@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HunterVPhotography | DFW Real Estate Media</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- MOBILE TOP BAR -->
+<div class="mobile-bar">
+  <div class="logo-mobile">
+    <img src="logo.png" alt="Logo">
+  </div>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</div>
+
+<!-- SIDEBAR -->
+<div class="sidebar" id="sidebar">
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+
+  <nav>
+    <a onclick="showPage('portfolio')">Portfolio</a>
+    <a onclick="showPage('pricing')">Pricing</a>
+    <a onclick="showPage('about')">About</a>
+    <a onclick="showPage('contact')">Contact</a>
+  </nav>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="page active">
+  <h1>Portfolio</h1>
+
+  <div class="filters">
+    <button onclick="filter('all')">All</button>
+    <button onclick="filter('interior')">Interior</button>
+    <button onclick="filter('exterior')">Exterior</button>
+    <button onclick="filter('drone')">Drone</button>
+  </div>
+
+  <div class="gallery">
+    <!-- Replace these with your own images -->
+    <img class="item interior" src="images/int1.jpg">
+    <img class="item interior" src="images/int2.jpg">
+    <img class="item exterior" src="images/ext1.jpg">
+    <img class="item drone" src="images/drone1.jpg">
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="page">
+  <h1>Pricing</h1>
+
+  <div class="card"><h2>Under 1,500 Sq Ft</h2><p>$149</p></div>
+  <div class="card"><h2>1,500 – 2,500 Sq Ft</h2><p>$179</p></div>
+  <div class="card"><h2>2,500 – 3,500 Sq Ft</h2><p>$219</p></div>
+  <div class="card"><h2>3,500 – 4,500 Sq Ft</h2><p>$269</p></div>
+  <div class="card"><h2>4,500 – 6,000 Sq Ft</h2><p>$329</p></div>
+  <div class="card"><h2>6,000+ Sq Ft</h2><p>Custom Quote</p></div>
+
+  <h2>All Packages Include:</h2>
+  <ul>
+    <li>HDR Photography</li>
+    <li>Blue Sky Replacement (when needed)</li>
+    <li>Property Website</li>
+    <li>Floor Plan</li>
+    <li>24-Hour Delivery</li>
+  </ul>
+
+  <h2>Add-Ons</h2>
+  <ul>
+    <li>Drone Photography – $50</li>
+    <li>3D Tour – $99</li>
+    <li>Cinematic Video Tour (Includes Drone Footage) – $149</li>
+    <li>Social Media Reel – $79</li>
+    <li>Twilight Photos – $99</li>
+  </ul>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="page">
+  <h1>About</h1>
+  <p>
+    HunterVPhotography provides real estate media services across the DFW metroplex including photography, drone work, video tours, and 3D walkthroughs.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="page">
+  <h1>Contact</h1>
+  <p>Email: your@email.com</p>
+  <p>Phone: (000) 000-0000</p>
+</section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
